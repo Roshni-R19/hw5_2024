@@ -19,7 +19,7 @@ body{
     background-image: url("../images/concrete_seamless.png");
 }
 
-/* top navifation bar */
+/* top navigation bar */
 
 header{
     display: flex;
@@ -77,6 +77,8 @@ header{
 }
 
 @media all and (min-width: 900px) {
+
+    /* top navigation bar */
     header {
         display: flex;
         flex-flow: row wrap;
@@ -107,6 +109,7 @@ header{
 }
 
 @media all and (prefers-reduced-motion: reduce) {
+    /* removes logo animation */
     #logo{
         animation: none;
     }
@@ -132,6 +135,7 @@ header{
         justify-content: space-between;
     }
 
+    /* styling the cards */
     .pricing{  
         display: flex;
         flex-flow: row nowrap;
@@ -143,10 +147,12 @@ header{
         flex-basis: 325px;
     }
 
+    /* styling images */
     .gallery {
         display: none;
     }
     
+    /* adding emoji at end of list item*/
     .card li:nth-of-type(2)::after {
         content: "\01F44D";
     }
