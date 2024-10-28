@@ -2,6 +2,8 @@
     animation: logoimage 5s; 
     /* delay for page load */
     animation-delay: 1s;
+    /* prevents sharp logo size change after animation */
+    width: 475px;
 }
 
 /* animating logo */
